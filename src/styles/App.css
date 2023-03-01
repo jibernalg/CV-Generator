@@ -1,0 +1,391 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: darkgray;
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  color: white;
+  height: 7rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.personalInfoForm {
+  margin-top: 10rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90vw;
+  padding: 30px 0 40px 0;
+  margin: 0 auto;
+  background-color: lightgray;
+  max-width: 990px;
+}
+
+label {
+  width: 80vw;
+  padding: 0px 0px 15px 0px;
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: xx-large;
+  max-width: 880px;
+}
+
+input,
+textarea {
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+  line-height: 1.5;
+  border-radius: 10px;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 10px 10px 10px 10px;
+  width: 80vw;
+  max-width: 880px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 82vw;
+  max-width: 880px;
+  padding: 15px;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: x-large;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1100px) {
+  .pdfButton {
+    display: none;
+  }
+}
+@media (min-width: 1100px) {
+  .msgButton {
+    display: none;
+  }
+}
+
+.Content {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  margin: 80px auto;
+  width: 90vw;
+  max-width: 990px;
+  min-width: 450px;
+  min-width: clamp(450px, calc(100% - 100px), 990px);
+  min-height: auto;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 70%;
+}
+
+.Title {
+  background-color: rgb(46, 64, 111);
+  grid-row: 1 / span 1;
+  height: 330px;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  height: min-content;
+}
+@media (max-width: 900px) {
+  .Title {
+    display: block;
+  }
+}
+.Col1 {
+  grid-column: 1 / span 1;
+  display: block;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 900px) {
+  .Col1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+}
+#nameCV {
+  line-break: normal;
+  font-size: 45px;
+}
+@media (max-width: 900px) {
+  #nameCV {
+    font-size: 35px;
+    text-align: center;
+  }
+}
+#posCV {
+  font-size: 2em;
+  color: rgb(255, 217, 249);
+  font-size: 22px;
+  padding-top: 15px;
+}
+@media (max-width: 900px) {
+  #posCV {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+#aboutCV {
+  padding-top: 15px;
+  text-align: justify;
+  font-size: 16px;
+}
+@media (max-width: 900px) {
+  #aboutCV {
+    text-align: justify;
+  }
+}
+.Col2 {
+  grid-column: 2 / span 1;
+  display: block;
+  align-self: center;
+  padding-left: 40px;
+  margin: auto;
+}
+@media (max-width: 900px) {
+  .Col2 {
+    padding-bottom: 40px;
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+.col1P {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(255, 217, 249);
+  font-size: large;
+}
+@media (max-width: 900px) {
+  .col1P {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: medium;
+  }
+}
+.Info {
+  grid-row: 2 / span 1;
+  color: black;
+  background-color: white;
+  padding: 30px 0px 0px 40px;
+}
+@media (max-width: 900px) {
+  .Info {
+    padding: 10px 0px 0px 20px;
+  }
+}
+
+.experience-section {
+  margin-top: 30px;
+}
+@media (max-width: 900px) {
+  .experience-section {
+    margin-top: 10px;
+  }
+}
+
+.exp-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #484c78;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .exp-section-title {
+    font-size: 22px;
+  }
+}
+
+.job {
+  margin-right: 40px;
+  padding: 15px;
+}
+@media (max-width: 900px) {
+  .job {
+    padding: 15px;
+  }
+}
+
+.job-company {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #3b3b3d9b;
+  font-weight: bold;
+}
+
+.job-position {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #484c78;
+}
+
+.job-dates {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #3b3b3d9b;
+}
+
+.job-description {
+  font-size: 16px;
+  color: #3b3b3d9b;
+}
+
+.section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.divider {
+  height: 3px;
+  background-color: #ffcedb;
+  margin: 30px 100px 20px 5px;
+}
+
+
+.education-section {
+  margin-top: 30px;
+}
+
+.edu-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #484c78;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .edu-section-title {
+    font-size: 22px;
+  }
+}
+
+.edu-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+@media (max-width: 900px) {
+  .edu-container {
+    display: block;
+  }
+}
+
+.education {
+  margin-right: 40px;
+  padding: 15px;  
+}
+
+.education-school {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #3b3b3d9b;
+  font-weight: bold;
+}
+
+.education-degree {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #484c78;
+  font-weight: bold;
+}
+
+.education-dates {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #3b3b3d9b;
+}
+
+.skills-section {
+  margin-top: 30px;
+}
+
+.skills-section-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #484c78;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px) {
+  .skills-section-title {
+    font-size: 22px;
+  }
+}
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.skills {
+  flex-grow: 0;
+  flex-basis: 25%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+@media (max-width: 700px) {
+  .skills {
+    flex-basis: 30%;
+    text-align: center;
+    height: 35px;
+  }
+}
+
+.skills-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #3b3b3d9b;
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  .skills-name {
+    font-size: 17px;
+  }
+}
+
+.Footer {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: large;
+  height: 6rem;
+  width: 100%;
+}
